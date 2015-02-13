@@ -1,0 +1,20 @@
+{
+  "name": "slider-revealjs",
+  "version": "0.0.0",
+  "authors": [
+    "gustavo gonzales <gustavo.gonda@gmail.com>"
+  ],
+  "description": "sliders app with  revealjs, nodejs, angularjs.",
+  "main": "bin/www",
+  "dependencies":{
+    "revealjs":"https://github.com/hakimel/reveal.js.git",
+    "jquery":"latest",
+    "angularjs":"latest"
+  }
+  ,"keywords": [
+    "nodejs",
+    "revealjs",
+    "angularjs"
+  ],
+  "license": "MIT"
+}
