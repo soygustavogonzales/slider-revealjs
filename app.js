@@ -1,15 +1,28 @@
 var express = require('express');
+var http = require('http');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
 var routes = require('./routes/index');
 var users = require('./routes/users');
-
 var app = express();
 
+var server = http.Server(app);
+var io = require('socket.io')(server)
+server.listen(8080)
+
+io.sockets.on('connection',function(socket){
+    socket.on('next',function(){
+        console.log("next")
+        io.sockets.emit('next')
+    });
+    socket.on('prev',function(){
+        console.log("prev")
+        io.sockets.emit('prev')
+    });
+});
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
