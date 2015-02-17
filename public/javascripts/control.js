@@ -1,25 +1,18 @@
-Reveal.initialize();
-var previousIndex = 0;
+Reveal.initialize({
+	transition:'slide'
+	//,parallaxBackgroundImage:'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'
+});
 console.log(location.host)
+var  m = location.pathname.split('/');
+var room = null;
+m.shift();m.pop();
+if(m[1]){room = m[1]}
+
 socket = io.connect(location.host);
 socket.on('connect',function(){
-	Reveal.addEventListener('slidechanged',function(event){
-		with(console){
-			//log(event)
-			//log(event.previousSlide)
-			//log(event.currentSlide)
-			log(event.indexh)
-
-			if(event.indexh>previousIndex){
-				log("right")
-				socket.emit('next',true)
-			}else{
-				socket.emit('prev',true)
-				log("left")
-			}
-			previousIndex = event.indexh
-			//log(event.indexv)
-		}
-	},false);
-
+	socket.emit('joinToRoom',{room:room})
 })
+
+	Reveal.addEventListener('slidechanged',function(event){
+			socket.emit('toSlide',{indexh:event.indexh,indexv:event.indexv})
+	},false);

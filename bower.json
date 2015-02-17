@@ -6,12 +6,13 @@
   ],
   "description": "sliders app with  revealjs, nodejs, angularjs.",
   "main": "bin/www",
-  "dependencies":{
-    "revealjs":"https://github.com/hakimel/reveal.js.git",
-    "jquery":"latest",
-    "angularjs":"latest"
-  }
-  ,"keywords": [
+  "dependencies": {
+    "revealjs": "https://github.com/hakimel/reveal.js.git",
+    "jquery": "latest",
+    "angularjs": "latest",
+    "uri.js": "~1.14.1"
+  },
+  "keywords": [
     "nodejs",
     "revealjs",
     "angularjs"

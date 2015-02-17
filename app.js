@@ -12,15 +12,19 @@ var app = express();
 var server = http.Server(app);
 var io = require('socket.io')(server)
 server.listen(8080)
+var rooms = [];
 
 io.sockets.on('connection',function(socket){
-    socket.on('next',function(){
-        console.log("next")
-        io.sockets.emit('next')
-    });
-    socket.on('prev',function(){
-        console.log("prev")
-        io.sockets.emit('prev')
+    socket.on('toSlide',function(opt){
+        io.sockets.in(socket.room).emit('toSlide',opt)
+    })
+    socket.on('joinToRoom',function(opt){
+        socket.join(opt.room)
+        socket.room = opt.room
+        console.log(socket.room)
+    })
+    socket.on('disconnect',function(){
+
     });
 });
 // view engine setup
