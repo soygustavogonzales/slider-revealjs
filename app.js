@@ -7,8 +7,14 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var app = express();
+var sockets = require('./routes/sockets');
 
+var app = express();
+var server = http.createServer(app);
+app.set('server',server);
+var io = require('socket.io')(app.get('server'));
+
+io.sockets.on('connection',sockets);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
