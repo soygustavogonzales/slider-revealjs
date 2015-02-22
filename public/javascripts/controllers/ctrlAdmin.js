@@ -1,5 +1,5 @@
 sliderApp.controller('ctrlAdmin', ['svcSocket',function(svcSocket){
-	Reveal.initialize();
+	
 	var  m = location.pathname.split('/');
 	var room = null;
 	m.shift();m.pop();

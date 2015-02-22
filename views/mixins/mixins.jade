@@ -1,6 +1,6 @@
-mixin reveal(ctrl,opt)
+mixin reveal(admin,ctrl)
 	if admin
-		.reveal(ng-controller="#{ctrl}",drv-reveal)
+		.reveal(ng-controller="#{ctrl}",drv-reveal,data-keyboard="true",data-touch="true",data-controls="true")
 			.slides
 				section
 					h1|#{room}
@@ -20,7 +20,7 @@ mixin reveal(ctrl,opt)
 				section
 					h2|6 slide
 	else
-		.reveal(ng-controller="#{ctrl}",drv-reveal,data-keyboard="false",data-touch="false",data-slide-number="true",data-background-transition="slide",transition-speed="slow",data-controls="false")
+		.reveal(ng-controller="#{ctrl}",drv-reveal,data-keyboard="false",data-touch="false",data-slide-number="true",data-background-transition="slide",data-transition-speed="slow",data-controls="false")
 			.slides
 				section
 					h1|#{room}
