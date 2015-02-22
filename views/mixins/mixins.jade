@@ -1,0 +1,41 @@
+mixin reveal(ctrl,opt)
+	if admin
+		.reveal(ng-controller="#{ctrl}",drv-reveal)
+			.slides
+				section
+					h1|#{room}
+					h2|First slide
+				section(data-transition="zoom")
+					section
+						h2|Second slide
+						h3|subslide
+					section
+						h3|subslide
+				section
+					h2|Thirty slide
+				section
+					h2|4 slide
+				section
+					h2|5 slide
+				section
+					h2|6 slide
+	else
+		.reveal(ng-controller="#{ctrl}",drv-reveal,data-keyboard="false",data-touch="false",data-slide-number="true",data-background-transition="slide",transition-speed="slow",data-controls="false")
+			.slides
+				section
+					h1|#{room}
+					h2|First slide
+				section(data-transition="zoom")
+					section
+						h2|Second slide
+						h3|subslide
+					section
+						h3|subslide
+				section
+					h2|Thirty slide
+				section
+					h2|4 slide
+				section
+					h2|5 slide
+				section
+					h2|6 slide

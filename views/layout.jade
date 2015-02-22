@@ -1,5 +1,5 @@
 doctype html
-html
+html(ng-app="sliderApp")
 	head
 		title= title
 		link(rel='stylesheet', href='/bower_components/revealjs/css/reveal.css')
@@ -11,8 +11,11 @@ html
 		block content
 		script(src="/socket.io/socket.io.js")
 		script(src="/bower_components/revealjs/js/reveal.js")
-		script(src="/bower_components/uri.js/src/URI.min.js")
+		script(src="/bower_components/angularjs/angular.min.js")
+		script(src="/javascripts/sliderApp.js")
+		script(src="/javascripts/services/svcSocket.js")
 		if admin
-			script(src="/javascripts/control.js")
+			script(src="/javascripts/controllers/ctrlAdmin.js")
 		else
-			script(src="/javascripts/script.js")
+			script(src="/javascripts/controllers/ctrlVisitor.js")
+		script(src="/javascripts/directives/drvReveal.js")
