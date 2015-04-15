@@ -1,6 +1,6 @@
 module.exports = function(socket){
 	//console.log(this)//this = io.sockets
-	   socket.on('toSlide',function(opt){
+	socket.on('toSlide',function(opt){
         this.in(socket.room).emit('toSlide',opt)
     })
     socket.on('joinToRoom',function(opt){
