@@ -6,26 +6,6 @@ mixin reveal(admin,ctrl)
 					h1|#{room}
 					h2|First slide
 				section(data-transition="zoom")
-					section(data-background="http://www.oldpicsarchive.com/wp-content/uploads/2014/10/Brigitte-Bardot-posing-for-Kees-Van-Dongen-1959-682x1024.jpg")
-						h2|Second slide
-						h3|subslide
-					section(data-background="http://static.elmeme.me/static/uploads/images/2014/03/36718/36732_subitem_full.jpg")
-						h3|subslide
-				section(data-background="http://www.oldpicsarchive.com/wp-content/uploads/2015/03/1927-Buyers-create-a-traffic-jam-at-the-Los-Angeles-wholesale-produce-market..jpg")
-					h2|Thirty slide
-				section(data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4")
-					h2|4 slide
-				section
-					object(width="800",height="600",data="http://pizarra.herokuapp.com/")
-				section
-					//object(width="1360",height="780",data="http://localhost:3030/slides/sample2/")
-	else
-		.reveal(ng-controller="#{ctrl}",drv-reveal,data-keyboard="false",data-touch="false",data-slide-number="true",data-background-transition="slide",data-transition-speed="slow",data-controls="false")
-			.slides
-				section
-					h1|#{room}
-					h2|First slide
-				section(data-transition="zoom")
 					section
 						h2|Second slide
 						h3|subslide
@@ -39,3 +19,23 @@ mixin reveal(admin,ctrl)
 					h2|5 slide
 				section
 					h2|6 slide
+	else
+		.reveal(ng-controller="#{ctrl}",drv-reveal,data-keyboard="false",data-touch="false",data-slide-number="true",data-background-transition="slide",data-transition-speed="slow",data-controls="false")
+			.slides
+				section(data-background-iframe="http://stars.chromeexperiments.com/")
+					img(style="box-shadow:initial;background:transparent;border:none;outline:0",width="480",src="https://nodejs.org/images/logo.svg")
+					br
+					small(style="position:absolute;bottom:-10em;left:-6em;color:white;")|Gustavo Gonzales : @gagdgonda
+				section(data-transition="zoom")
+					section(data-background="http://www.oldpicsarchive.com/wp-content/uploads/2014/10/Brigitte-Bardot-posing-for-Kees-Van-Dongen-1959-682x1024.jpg")
+						h2|Second slide
+						h3|subslide
+					section(data-background="http://static.elmeme.me/static/uploads/images/2014/03/36718/36732_subitem_full.jpg")
+						h3|subslide
+				section(data-background="http://www.oldpicsarchive.com/wp-content/uploads/2015/03/1927-Buyers-create-a-traffic-jam-at-the-Los-Angeles-wholesale-produce-market..jpg")
+					h2|Thirty slide
+				section(data-background-iframe="")
+				section
+					object(width="800",height="600",data="http://pizarra.herokuapp.com/")
+				section(data-background-iframe="http://thecarpandtheseagull.thecreatorsproject.com/#")
+					//object(width="1360",height="780",data="http://localhost:3030/slides/sample2/")
