@@ -4,9 +4,9 @@ html(ng-app="sliderApp")
 		title= title
 		link(rel='stylesheet', href='/bower_components/revealjs/css/reveal.css')
 		if admin
-			link(rel='stylesheet', href='/bower_components/revealjs/css/theme/league.css')
-		else
 			link(rel='stylesheet', href='/bower_components/revealjs/css/theme/sky.css')
+		else
+			link(rel='stylesheet', href='/bower_components/revealjs/css/theme/league.css')
 	body
 		block content
 		script(src="/socket.io/socket.io.js")

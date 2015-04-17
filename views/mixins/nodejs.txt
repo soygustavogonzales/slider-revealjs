@@ -1,0 +1,45 @@
+-nodejs
+	"Y Dios le dijo al hombre: a javascript amarás como él te ama a ti".
+	-Proverbio freaky :)
+-javascript
+	.Tu ya sabes que es javascript,
+	donde quiera que mires, habra
+	un pedacito de javascript.
+	.Porque se uso javascript:
+		pantallazo busqueda ruby
+		pantallazo busqueda python
+		pantallazo busqueda javascript
+		pantallazo busqueda php
+-personajes en javascript: 
+	brendan eich,el lo creo
+	douglas crockford,lo dio a conocer
+	john resig(creator of jquery), lo hizo mas facil
+	ryan dhal(creator of nodejs), lo elevo a otro nivel
+-que es nodejs:definicion
+	"Node.js® is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices."
+-Como trabaja Node en escencia
+	-El flujo de eventos
+	-Nodejs es NoBloqueante
+-sus modulos
+-comparemos un poco
+
+-Quienes ya lo usan
+	Yahoo
+	Paypal
+	Netflix
+	Linkedin
+	Medium
+	Flickr
+	NYT
+	Microsoft
+	Uber
+	Ebay
+	Wallmart
+-Cuando lo usaría, una analogía...
+	PHP
+	Python
+	Ruby
+	Nodejs(el batimovil)
+-Beneficios de Nodejs
+	.Si ya sabes javascript ya sabes Nodejs
+

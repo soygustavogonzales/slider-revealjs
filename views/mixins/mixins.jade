@@ -20,22 +20,41 @@ mixin reveal(admin,ctrl)
 				section
 					h2|6 slide
 	else
-		.reveal(ng-controller="#{ctrl}",drv-reveal,data-keyboard="false",data-touch="false",data-slide-number="true",data-background-transition="slide",data-transition-speed="slow",data-controls="false")
+		.reveal(ng-controller="#{ctrl}",drv-reveal,data-keyboard="true",data-touch="false",data-slide-number="true",data-background-transition="slide",data-transition-speed="slow",data-controls="true")
 			.slides
 				section(data-background-iframe="http://stars.chromeexperiments.com/")
 					img(style="box-shadow:initial;background:transparent;border:none;outline:0",width="480",src="https://nodejs.org/images/logo.svg")
 					br
 					small(style="position:absolute;bottom:-10em;left:-6em;color:white;")|Gustavo Gonzales : @gagdgonda
 				section(data-transition="zoom")
-					section(data-background="http://www.oldpicsarchive.com/wp-content/uploads/2014/10/Brigitte-Bardot-posing-for-Kees-Van-Dongen-1959-682x1024.jpg")
+					section(data-background-iframe="http://helloracer.com/racer-s/")
 						h2|Second slide
 						h3|subslide
-					section(data-background="http://static.elmeme.me/static/uploads/images/2014/03/36718/36732_subitem_full.jpg")
+						br
+						small(style="position:absolute;bottom:-10em;left:-6em;color:white;")|Gustavo Gonzales : @gagdgonda
+					section(data-background-iframe="http://carvisualizer.plus360degrees.com/classics/")
 						h3|subslide
-				section(data-background="http://www.oldpicsarchive.com/wp-content/uploads/2015/03/1927-Buyers-create-a-traffic-jam-at-the-Los-Angeles-wholesale-produce-market..jpg")
+						br
+						small(style="position:absolute;bottom:-10em;left:-6em;color:white;")|Gustavo Gonzales : @gagdgonda
+				section(data-background-video="/videos/batimovil.webm")
 					h2|Thirty slide
-				section(data-background-iframe="")
+					br
+					small(style="position:absolute;bottom:-10em;left:-6em;color:white;")|Gustavo Gonzales : @gagdgonda
+				section(data-background-iframe="http://carvisualizer.plus360degrees.com/threejs/")
+					br
+					small(style="position:absolute;bottom:-10em;left:-6em;color:white;")|Gustavo Gonzales : @gagdgonda
 				section
 					object(width="800",height="600",data="http://pizarra.herokuapp.com/")
-				section(data-background-iframe="http://thecarpandtheseagull.thecreatorsproject.com/#")
-					//object(width="1360",height="780",data="http://localhost:3030/slides/sample2/")
+					br
+					small(style="position:absolute;bottom:-10em;left:-6em;color:white;")|Gustavo Gonzales : @gagdgonda
+				section(data-background-iframe="http://data-arts.appspot.com/globe/")
+					ul
+						li: a(target="_blank",href="http://techblog.netflix.com/2014/11/nodejs-in-flames.html")|netflix_and_nodejs_benchmark
+						li: a(target="_blank",href="http://blog.kgriffs.com/2012/10/23/python-vs-node-vs-pypy.html")|nodejs_vs_python_benchmark
+						li: a(target="_blank",href="http://cdn.nflximg.com/ffe/siteui/blog/yunong/200mins.svg")|porque se uso V8 en nodejs benchmark
+						li: a(target="_blank",href="https://nodejs.org/cinco_de_node.pdf")|neginx_vs_apache_benchmark
+					br
+					small(style="position:absolute;bottom:-10em;left:-6em;color:white;")|Gustavo Gonzales : @gagdgonda
+					
+//comparacion de los modulos de cada lenguaje
+//https://s3.amazonaws.com/media-p.slid.es/uploads/josebaseba/images/910608/npm.png
