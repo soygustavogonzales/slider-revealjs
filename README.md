@@ -17,4 +17,5 @@ localhost:3000
 #View this page:
 
 ![Alt text](https://www.dropbox.com/s/0wer70zegvty3mc/pantalla-twitter-app.jpg?dl=0 "Result")
+![ScreenShot](https://www.dropbox.com/s/0wer70zegvty3mc/pantalla-twitter-app.jpg?dl=0)
 
