@@ -4,7 +4,7 @@ sliderApp.controller('ctrlAdmin', ['svcSocket',function(svcSocket){
 	var room = null;
 	m.shift();m.pop();
 	room = m&&m[1]
-
+	console.log(room);
 	svcSocket.on('connect',function(){
 		svcSocket.emit('joinToRoom',{room:room})
 	})

@@ -3,58 +3,196 @@ mixin reveal(admin,ctrl)
 		.reveal(ng-controller="#{ctrl}",drv-reveal,data-keyboard="true",data-touch="true",data-controls="true")
 			.slides
 				section
-					h1|#{room}
-					h2|First slide
-				section(data-transition="zoom")
-					section
-						h2|Second slide
-						h3|subslide
-					section
-						h3|subslide
-				section
-					h2|Thirty slide
-				section
-					h2|4 slide
-				section
-					h2|5 slide
-				section
-					h2|6 slide
-	else
-		.reveal(ng-controller="#{ctrl}",drv-reveal,data-keyboard="true",data-touch="false",data-slide-number="true",data-background-transition="slide",data-transition-speed="slow",data-controls="true")
-			.slides
-				section(data-background-iframe="http://stars.chromeexperiments.com/")
 					img(style="box-shadow:initial;background:transparent;border:none;outline:0",width="480",src="https://nodejs.org/images/logo.svg")
-					br
-					small(style="position:absolute;bottom:-10em;left:-6em;color:white;")|Gustavo Gonzales : @gagdgonda
-				section(data-transition="zoom")
-					section(data-background-iframe="http://helloracer.com/racer-s/")
-						h2|Second slide
-						h3|subslide
-						br
-						small(style="position:absolute;bottom:-10em;left:-6em;color:white;")|Gustavo Gonzales : @gagdgonda
-					section(data-background-iframe="http://carvisualizer.plus360degrees.com/classics/")
-						h3|subslide
-						br
-						small(style="position:absolute;bottom:-10em;left:-6em;color:white;")|Gustavo Gonzales : @gagdgonda
-				section(data-background-video="/videos/batimovil.webm")
-					h2|Thirty slide
-					br
-					small(style="position:absolute;bottom:-10em;left:-6em;color:white;")|Gustavo Gonzales : @gagdgonda
-				section(data-background-iframe="http://carvisualizer.plus360degrees.com/threejs/")
-					br
-					small(style="position:absolute;bottom:-10em;left:-6em;color:white;")|Gustavo Gonzales : @gagdgonda
+					small
+						blockquote(style="text-shadow: 0px 4px 3px rgba(0,0,0,1),0px 8px 13px rgba(0,0,0,1),0px 18px 23px rgba(0,0,0,1);",cite="Proverbio Freaky")|"Y Dios le dijo al hombre: Amarás a javascript como él te ama a ti"
 				section
-					object(width="800",height="600",data="http://pizarra.herokuapp.com/")
-					br
-					small(style="position:absolute;bottom:-10em;left:-6em;color:white;")|Gustavo Gonzales : @gagdgonda
-				section(data-background-iframe="http://data-arts.appspot.com/globe/")
+					section
+						h2|¿Javascript?
+						h4|Tu ya sabes que es javascript
+						br
+						strong|Donde quiera que mires habrá un pedacito de javascript
+					section
+						h2|¿Porque nodejs con javascript?
+						img(width="780",src="/images/lenguajes_busqueda_versus.jpg")
+					section(data-background="http://www.digitallearning.es/wp-content/uploads/2014/07/Code2013.jpg")
+						h2|Es tendencia...
+				section|Personajes
+					section
+						img(width="480",src="http://upload.wikimedia.org/wikipedia/commons/d/d1/Brendan_Eich_Mozilla_Foundation_official_photo.jpg")
+						br
+						strong|El lo creo.
+					section
+						img(width="480",src="http://yuiblog.com/blog-archive/assets/crockonjs-5-20100405-083224.jpg")
+						br
+						strong|El lo hizo famoso.
+					section
+						img(width="480",src="http://itmozg.ru/old/upload/tumblr_m1kxj5vl6j1r15j8x.jpg")
+						br
+						strong|El lo hizo mas fácil.
+					section(data-background="http://tenconf.s3.amazonaws.com/Node/ryan_dahl.png")			
+						strong|El lo llevo a otro nivel.
+				section
+					section
+						h2|¿Qué es Nodejs?
+						h5|"Node.js® is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices."
+					section
+						h2|¿Cómo trabaja Nodejs en escencia?
+						h3|El flujo de eventos
+					section
+						h2|¿Cómo trabaja Nodejs en escencia?
+						h3|Bloqueante, asi no!
+					section
+						h2|No bloqueante, así es Nodejs :)
+					section
+						h2|NPM y los modulos en Nodejs
+						img(src="https://s3.amazonaws.com/media-p.slid.es/uploads/josebaseba/images/910608/npm.png")
+					section
+						h2|¿Quiénes ya lo usan?
+						ol
+							li|Yahoo
+							li|Paypal
+							li|Netflix
+							li|Linkedin
+							li|Medium
+							li|Flikr
+							li|NYT
+							li|Microsoft
+							li|Uber
+							li|Ebay
+							li|Wallmart
+							li|MySpace
+							li|Proximamente Facebook
+				section(data-transition="zoom")
+					section
+						h2|¿Cuando usarlo?...una analogía
+					section(data-background="http://static1.fondosypantallas.com/wp-content/uploads/2012/10/MorganAeromax02.jpg")
+						h2|Quieres algo usual, usa un clásico, lo establecido, lo ya probado, mas tiempo en el mercado.
+						br
+						h5|PHP,JSP,...
+					section
+						h2|¿Cuando usarlo?...una analogía
+						br
+						h5|Algo mas sofisticado
+						br
+						strong|PYTHON,RUBY
+					section
+						h2|¿Cuando usarlo?...una analogía
+						h3|Mas velocidad, mayor performance
+						h2|PYTHON (STORM)
+					section
+						h2|¿Cuando usarlo?...una analogía
+						h2|¿Quiéres algo mas?, un todoterreno
+						br
+						h1|Se ambicioso...usa Node js...
+				section
+					h2|Entra a : pizarra.herokuapp.com y dibujate algo
+				section
+					h1|Si sabes javascript, ya sabes Nodejs
+				section
+					h2|Échale un ojo a esto:
 					ul
 						li: a(target="_blank",href="http://techblog.netflix.com/2014/11/nodejs-in-flames.html")|netflix_and_nodejs_benchmark
 						li: a(target="_blank",href="http://blog.kgriffs.com/2012/10/23/python-vs-node-vs-pypy.html")|nodejs_vs_python_benchmark
 						li: a(target="_blank",href="http://cdn.nflximg.com/ffe/siteui/blog/yunong/200mins.svg")|porque se uso V8 en nodejs benchmark
 						li: a(target="_blank",href="https://nodejs.org/cinco_de_node.pdf")|neginx_vs_apache_benchmark
-					br
-					small(style="position:absolute;bottom:-10em;left:-6em;color:white;")|Gustavo Gonzales : @gagdgonda
-					
-//comparacion de los modulos de cada lenguaje
-//https://s3.amazonaws.com/media-p.slid.es/uploads/josebaseba/images/910608/npm.png
+	else
+		.reveal(ng-controller="#{ctrl}",drv-reveal,data-keyboard="false",data-touch="false",data-slide-number="true",data-background-transition="slide",data-transition-speed="slow",data-controls="false")
+			.slides
+				section(data-background-iframe="http://stars.chromeexperiments.com/")
+					img(style="box-shadow:initial;background:transparent;border:none;outline:0",width="480",src="https://nodejs.org/images/logo.svg")
+					small
+						blockquote(style="text-shadow: 0px 4px 3px rgba(0,0,0,1),0px 8px 13px rgba(0,0,0,1),0px 18px 23px rgba(0,0,0,1);",cite="Proverbio Freaky")|"Y Dios le dijo al hombre: Amarás a javascript como él te ama a ti"
+				section
+					section
+						h2|¿Javascript?
+						h4|Tu ya sabes que es javascript
+						br
+						strong|Donde quiera que mires habrá un pedacito de javascript
+					section
+						h2|¿Porque nodejs con javascript?
+						img(width="780",src="/images/lenguajes_busqueda_versus.jpg")
+					section(data-background="http://www.digitallearning.es/wp-content/uploads/2014/07/Code2013.jpg")
+						h2|Es tendencia...
+				section|Personajes
+					section
+						img(width="480",src="http://upload.wikimedia.org/wikipedia/commons/d/d1/Brendan_Eich_Mozilla_Foundation_official_photo.jpg")
+						br
+						strong|El lo creo.
+					section
+						img(width="480",src="http://yuiblog.com/blog-archive/assets/crockonjs-5-20100405-083224.jpg")
+						br
+						strong|El lo hizo famoso.
+					section
+						img(width="480",src="http://itmozg.ru/old/upload/tumblr_m1kxj5vl6j1r15j8x.jpg")
+						br
+						strong|El lo hizo mas fácil.
+					section(data-background="http://tenconf.s3.amazonaws.com/Node/ryan_dahl.png")			
+						strong|El lo llevo a otro nivel.
+				section
+					section
+						h2|¿Qué es Nodejs?
+						h5|"Node.js® is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices."
+					section
+						h2|¿Cómo trabaja Nodejs en escencia?
+						h3|El flujo de eventos
+						img(src="http://image.beekka.com/blog/2014/bg2014100803.png")
+					section(data-background="http://www.diarioconcordia.com/wp-content/uploads/2013/06/cola-en-el-banco.jpg")
+						h2|¿Cómo trabaja Nodejs en escencia?
+						h3|Bloqueante, asi no!
+					section(style="-webkit-filter:grayscale(2em);",data-background="http://e.peru21.pe/102/ima/0/0/3/6/9/369793.jpg")
+						h2|No bloqueante, así es Nodejs :)
+					section
+						h2|NPM y los modulos en Nodejs
+						img(src="https://s3.amazonaws.com/media-p.slid.es/uploads/josebaseba/images/910608/npm.png")
+					section
+						h2|¿Quiénes ya lo usan?
+						ol
+							li|Yahoo
+							li|Paypal
+							li|Netflix
+							li|Linkedin
+							li|Medium
+							li|Flikr
+							li|NYT
+							li|Microsoft
+							li|Uber
+							li|Ebay
+							li|Wallmart
+							li|MySpace
+							li|Proximamente Facebook
+				section(data-transition="zoom")
+					section
+						h2|¿Cuando usarlo?...una analogía
+					section(data-background="http://static1.fondosypantallas.com/wp-content/uploads/2012/10/MorganAeromax02.jpg")
+						h2|Quieres algo usual, usa un clásico, lo establecido, lo ya probado, mas tiempo en el mercado.
+						br
+						h5|PHP,JSP,...
+					section(data-background-iframe="http://carvisualizer.plus360degrees.com/threejs/")
+						h2|¿Cuando usarlo?...una analogía
+						br
+						h5|Algo mas sofisticado
+						br
+						strong|PYTHON,RUBY
+					section(data-background-iframe="http://helloracer.com/racer-s/")
+						h2|¿Cuando usarlo?...una analogía
+						h3|Mas velocidad, mayor performance
+						h2|PYTHON (STORM)
+					section(data-background-video="/videos/batimovil.webm")
+						h2|¿Cuando usarlo?...una analogía
+						h2|¿Quiéres algo mas?, un todoterreno
+						br
+						h1|Se ambicioso...usa Node js...
+				section
+					h2|Entra a : pizarra.herokuapp.com y dibujate algo
+					object(style="overflow:hidden;",width="800",height="600",data="http://pizarra.herokuapp.com/")
+				section
+					h1|Si sabes javascript, ya sabes Nodejs
+				section
+					h2|Échale un ojo a esto:
+					ul
+						li: a(target="_blank",href="http://techblog.netflix.com/2014/11/nodejs-in-flames.html")|netflix_and_nodejs_benchmark
+						li: a(target="_blank",href="http://blog.kgriffs.com/2012/10/23/python-vs-node-vs-pypy.html")|nodejs_vs_python_benchmark
+						li: a(target="_blank",href="http://cdn.nflximg.com/ffe/siteui/blog/yunong/200mins.svg")|porque se uso V8 en nodejs benchmark
+						li: a(target="_blank",href="https://nodejs.org/cinco_de_node.pdf")|neginx_vs_apache_benchmark
+
